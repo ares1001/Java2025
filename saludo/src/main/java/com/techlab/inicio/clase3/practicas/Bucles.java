@@ -21,17 +21,19 @@ while (saldo > 0){
         System.out.println("mensaje final, fuera del bucle");*/
 
         Scanner entrada = new Scanner(System.in);
-        System.out.println("ingrese el numero que quiere ver la tabla ");
-    int numeroTabla= entrada.nextInt();
 
-    for (int i = 1; i<= 10; i++){
+        System.out.println("ingrese el numero que quiere ver la tabla ");
+        System.out.println("Bucle For");
+        int numeroTabla= entrada.nextInt();
+
+    for (int i = 1; i<= 10; i+=5){
         System.out.println(numeroTabla + " x " + i + " = " + (numeroTabla *i));
     }
-
-    int j = 1;
-    while(j <= 10){
+        System.out.println("Bucle WHILE");
+    int j = 10;
+    while(j <= 100){
         System.out.println(numeroTabla + " X " + j +"=" + (numeroTabla * j));
-                j = j+ 1;
+                j = j+ 3;
     }
     }
 }
