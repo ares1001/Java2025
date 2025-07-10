@@ -1,0 +1,22 @@
+/*
+ * Copyright (c) 2025. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ * Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+ * Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+ * Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+ * Vestibulum commodo. Ut rhoncus gravida arcu.
+ */
+
+package com.techlab.inicio.clase7;
+
+public class Comida extends Producto{
+    int pesoGramos;
+
+    public Comida(String nombre, double precio, int pesoGramos) {
+        super(nombre, precio);
+        this.pesoGramos = pesoGramos;
+    }
+@Override
+    public void mostrarInfo(){
+        System.out.println("Peso del producto : " + this.pesoGramos);
+    }
+}

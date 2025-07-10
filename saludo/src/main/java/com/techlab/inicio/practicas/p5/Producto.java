@@ -19,6 +19,14 @@ public class Producto {
 
     }
 
+
+    public void actualizarPrecio(double precio){
+        if ( precio >= 1 && precio <=10000){
+            this.precio = precio;
+        } else{
+            System.out.println("ERROR");
+        }
+    }
     void print() {
         System.out.println("*********** ");
         System.out.println("* Nombre : " + this.nombre);
@@ -31,14 +39,15 @@ public class Producto {
         System.out.println("Producto " + this.nombre);
     }
 
-    void agregarDescuento(double descuento){
+    public void agregarDescuento(double descuento){
         this.descuento = descuento;
     }
 
     boolean contieneNombre(String busqueda){
          return this.nombre.contains(busqueda);
     }
-    double calcularPrecioTotal() {
+
+    public double calcularPrecioTotal() {
         double precioSinDescuento = this.precio * this.cantidad;
         double descuento = 1 - ((double) this.descuento /100);
 
